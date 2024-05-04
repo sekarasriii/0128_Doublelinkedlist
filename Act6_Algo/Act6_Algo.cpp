@@ -135,5 +135,9 @@ void deleteCurrentNode(Node* current, int rollNo) {
 }
 
 bool listEmpty() {
+	return (START == NULL);
+}
+
+void traverse() {
 
 }
