@@ -188,9 +188,12 @@ void searchData() {
 	}
 }
 
-int main() {
-	while (true) {
-		try {
+int main()
+{
+	while (true)
+	{
+		try
+		{
 			cout << "\nMenu" << endl;
 			cout << "1. Add a record to the list" << endl;
 			cout << "2. Delete a record from the list" << endl;
@@ -225,6 +228,9 @@ int main() {
 				break;
 			}
 		}
-
+		catch (exception& e)
+		{
+			cout << "Check for the values entered." << endl;
+		}
 	}
 }
