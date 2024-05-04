@@ -122,6 +122,13 @@ void deleteNode() {
 	else
 	{
 		// Node to be deleted is not the first node
-
+		previous->next = current->next;
+		if (current->next != NULL)
+			// If there's a successor, update its prev pointer
+			current->next->prev = previous;
 	}
+}
+	//Release the memory of the node marked as current
+void deleteCurrentNode(Node* current, int rollNo) {
+
 }
